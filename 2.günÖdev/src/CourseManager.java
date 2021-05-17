@@ -15,10 +15,21 @@ public class CourseManager {
 
 		System.out.println(course.getName() + " Kursunuz güncellendi.");
 	}
-
-	public void recordCourseVideo() {
+	public void recordCourseVideo(Course course) {
 
 		System.out.println("Ders video'su cihazýnýza yüklendi");
 	}
+
+	public void addRating(Course course) {
+		System.out.println("Kurs deðerlendirilmesi sisteme eklendi");
+	}
+
+	public void lectureNotes(Course course) {
+		System.out.println("Ders Notlarý Kaydedildi");
+	}
+	public void defineAssignment(Course course) {
+		System.out.println("Ödev sisteme yüklendi");
+	}
+
 
 }

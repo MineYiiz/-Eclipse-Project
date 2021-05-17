@@ -1,9 +1,9 @@
 
-public class StudentManager extends Users {
+public class IntructorManager extends Users {
 
 	@Override
 	public void add(User user) {
-		System.out.println("Öðrenci Kaydedildi : " + user.getUserName());
+		System.out.println("Eðitmen Kaydedildi : " + user.getUserName());
 	}
 
 	public void addMultiple(User[] users) {
@@ -15,7 +15,7 @@ public class StudentManager extends Users {
 
 	@Override
 	public void remove(User user) {
-		System.out.println("Öðrenci Silindi : " + user.getUserName());
+		System.out.println("Eðitmen Silindi : " + user.getUserName());
 	}
 
 	public void removeMultiple(User[] users) {
@@ -27,7 +27,7 @@ public class StudentManager extends Users {
 
 	@Override
 	public void update(User user) {
-		System.out.println("Öðrenci Güncellendi : " + user.getUserName());
+		System.out.println("Eðitmen Güncellendi : " + user.getUserName());
 	}
 
 	public void updateMultiple(User[] users) {

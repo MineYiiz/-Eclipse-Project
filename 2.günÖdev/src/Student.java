@@ -1,18 +1,34 @@
 
 public class Student extends User {
 	public Student() {
-		System.out.println("Öðrenciler");
+		System.out.println("Öðrenci");
+	}
+	
+	String name;
+	String lastName;
+	String theChapterYouAreReading;
+	
+	public Student( String name, String lastName, String theChapterYouAreReading) {
+	
+		this.name = name;
+		this.lastName = lastName;
+		this.theChapterYouAreReading = theChapterYouAreReading;
 	}
 
-	String theChapterYouAreReading;
-	String educationStatus;
-	String theDepartmentYouWantToSpecializeIn;
+	public String getName() {
+		return name;
+	}
 
-	public Student(String theChapterYouAreReading, String educationStatus, String theDepartmentYouWantToSpecializeIn) {
-		super();
-		this.theChapterYouAreReading = theChapterYouAreReading;
-		this.educationStatus = educationStatus;
-		this.theDepartmentYouWantToSpecializeIn = theDepartmentYouWantToSpecializeIn;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getTheChapterYouAreReading() {
@@ -23,20 +39,6 @@ public class Student extends User {
 		this.theChapterYouAreReading = theChapterYouAreReading;
 	}
 
-	public String getEducationStatus() {
-		return educationStatus;
-	}
-
-	public void setEducationStatus(String educationStatus) {
-		this.educationStatus = educationStatus;
-	}
-
-	public String getTheDepartmentYouWantToSpecializeIn() {
-		return theDepartmentYouWantToSpecializeIn;
-	}
-
-	public void setTheDepartmentYouWantToSpecializeIn(String theDepartmentYouWantToSpecializeIn) {
-		this.theDepartmentYouWantToSpecializeIn = theDepartmentYouWantToSpecializeIn;
-	}
+	
 
 }

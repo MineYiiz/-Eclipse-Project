@@ -1,26 +1,33 @@
 
 public class Instructor extends User {
 	public Instructor() {
-		System.out.println("Eðitmenlerimiz");
+		System.out.println("Eðitmen");
 	}
+	 String name;
+	 String lastName;
+	 String profession;
+	 
+	public Instructor(String name, String lastName, String profession) {
 
-	String telephoneNumber;
-	String profession;
-	String jobExperience;
-
-	public Instructor(String telephoneNumber, String profession, String jobExperience) {
-		super();
-		this.telephoneNumber = telephoneNumber;
+		this.name = name;
+		this.lastName = lastName;
 		this.profession = profession;
-		this.jobExperience = jobExperience;
 	}
 
-	public String getTelephoneNumber() {
-		return telephoneNumber;
+	public String getName() {
+		return name;
 	}
 
-	public void setTelephoneNumber(String telephoneNumber) {
-		this.telephoneNumber = telephoneNumber;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getProfession() {
@@ -30,13 +37,4 @@ public class Instructor extends User {
 	public void setProfession(String profession) {
 		this.profession = profession;
 	}
-
-	public String getJobExperience() {
-		return jobExperience;
-	}
-
-	public void setJobExperience(String jobExperience) {
-		this.jobExperience = jobExperience;
-	}
-
 }

@@ -1,22 +1,39 @@
 
+public class UserManager extends Users {
 
-public class UserManager {
+	@Override
 	public void add(User user) {
-
-		System.out.println("Sistem kayýt saðlandý");
+		System.out.println("Sisteme Kayýt Saðlandý : " + user.getUserName());
 	}
-	
+
 	public void addMultiple(User[] users) {
-		for(User user : users) {
+		for (User user : users) {
 			add(user);
 		}
 	}
 
-	public void changePassword() {
-		System.out.println("Þifreniz deðiþtirildi");
+	@Override
+	public void remove(User user) {
+		System.out.println("Sisteme Kayýt Saðlandý : " + user.getUserName());
 	}
 
-	public void uploadPhoto() {
-		System.out.println("Fotoðraf yüklendi");
+	public void removeMultiple(User[] users) {
+		for (User user : users) {
+			remove(user);
+		}
 	}
+
+	@Override
+	public void update(User user) {
+		System.out.println("Siisteme Kayýt Saðlandý : " + user.getUserName());
+	}
+
+	public void updateMultiple(User[] users) {
+		for (User user : users) {
+			update(user);
+		}
+
+	}
+
 }
+
